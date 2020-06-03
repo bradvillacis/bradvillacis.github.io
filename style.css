@@ -1,0 +1,42 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  background-color: #5D5C61;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Drone { 
+	grid-area: 1/1;
+	background-color: #7395AE;
+}
+.BreakTop{
+	grid-area: 1/3;
+}
+.Gui { 
+	grid-area: 1/5;
+	background-color: #7395AE;
+}
+.BreakLeft{
+	grid-area: 2/1;
+}
+.About-me {
+	grid-area: 2/3;
+	background-color: #7395AE;
+}
+.BreakRight{
+	grid-area: 2/5;
+}
+.Rover { 
+	grid-area: 3/1;
+	background-color: #7395AE;
+}
+.BreakBot{
+	grid-area: 3/3;
+}
+.NCAS { 
+	grid-area: 3/5; 
+	background-color: #7395AE;
+}
