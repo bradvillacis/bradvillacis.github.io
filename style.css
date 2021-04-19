@@ -1,48 +1,145 @@
+* {box-sizing: border-box}
+.mySlides1 {display: none}
+img {vertical-align: middle;}
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;  
-  justify-items: middle;
-  background-color: #265077;
+body {
+  font-family: Verdana 
+  sans-serif; 
+  margin: 0px;
+  background-color: black;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+.bio-container {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.pic {
+  float: left;
+  width: 40%;
+  height: 400px;
+  max-width: 400px;
+  margin-left: 10px;
+}
+
+span.bio {
+  float: left;
+  width: 40%;
+  height: 400px;
+  padding: 5px;
+  width: 1400px;
+  font-size: 22px;
+  display: block; 
+  background-color: white; 
+  color: black;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  top: 10px;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
   width: auto;
-  height: 100vh;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  background-color: #28282B;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.BreakTop{
-	grid-column: 1 / span 3;
-	background-color: #022140;
-	text-align:center;
-	color:white;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.Drone { 
-	grid-area: 2/1;
-	margin-left: 50px;
-	position: relative;
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
 }
 
-.About-me {
-	grid-area: 2/2;
-	margin-left: 50px;
+
+.socials {
+  position: relative;
+  margin: auto;
+  width: 12%;
+  padding: 10px;
 }
 
-.Gui { 
-	grid-area: 2/3;
-	transition:transform 0.25s ease;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 }
 
-.Rover { 
-	grid-area: 3/1;
-	margin-left: 50px;
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
 
-.Bio{
-	text-align: justify;
-	color: white;
+.fa-google {
+  background: #dd4b39;
+  color: white;
 }
 
-.NCAS { 
-	grid-area: 3/3;
-	margin-left: 50px;
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slideshow-container:hover .image {
+  opacity: 0.3;
+}
+
+.slideshow-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  padding: 16px 32px;
 }
